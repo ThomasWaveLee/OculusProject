@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EDBA2E5E-958F-44D1-9EF6-B9854A95B7D1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TEST</RootNamespace>
+    <ProjectName>OGL_Graph</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>OculusSDK\LibOVR\Include;OculusSDK\LibOVRKernel\Src;\include;\wiiuse;\include\GL;OculusSDK\LibOVR\Include\Extras;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>OculusSDK\LibOVR\Include;OculusSDK\LibOVRKernel\Src;\include;\wiiuse;OculusSDK\LibOVR\Include\Extras;\include\GL;$(IncludePath)</IncludePath>
+    <LibraryPath>OculusSDK\LibOVR\Lib\Windows\Win32\Release\VS2015;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glut32.lib;hid.lib;LibOVR.lib;LibOVRKernel.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glut32.lib;hid.lib;LibOVR.lib;LibOVRKernel.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Mine\glh_glut.h" />
+    <ClInclude Include="Mine\glut.h" />
+    <ClInclude Include="Mine\Main.h" />
+    <ClInclude Include="Mine\OculusData.h" />
+    <ClInclude Include="Mine\OGLGraph.h" />
+    <ClInclude Include="Mine\OGLui.h" />
+    <ClInclude Include="Mine\WiiModule.h" />
+    <ClInclude Include="wiiuse\classic.h" />
+    <ClInclude Include="wiiuse\definitions.h" />
+    <ClInclude Include="wiiuse\definitions_os.h" />
+    <ClInclude Include="wiiuse\dynamics.h" />
+    <ClInclude Include="wiiuse\events.h" />
+    <ClInclude Include="wiiuse\guitar_hero_3.h" />
+    <ClInclude Include="wiiuse\io.h" />
+    <ClInclude Include="wiiuse\ir.h" />
+    <ClInclude Include="wiiuse\motion_plus.h" />
+    <ClInclude Include="wiiuse\nunchuk.h" />
+    <ClInclude Include="wiiuse\os.h" />
+    <ClInclude Include="wiiuse\wiiboard.h" />
+    <ClInclude Include="wiiuse\wiiuse.h" />
+    <ClInclude Include="wiiuse\wiiuse_internal.h" />
+    <ClInclude Include="wiiuse\wiiuse_msvcstdint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Mine\glutfonts.c" />
+    <ClCompile Include="Mine\Main.cpp" />
+    <ClCompile Include="Mine\OculusData.cpp" />
+    <ClCompile Include="Mine\OGLGraph.cpp" />
+    <ClCompile Include="Mine\OGLui.cpp" />
+    <ClCompile Include="Mine\WiiModule.cpp" />
+    <ClCompile Include="OculusSDK\LibOVR\Src\OVR_CAPIShim.c" />
+    <ClCompile Include="wiiuse\classic.c" />
+    <ClCompile Include="wiiuse\dynamics.c" />
+    <ClCompile Include="wiiuse\events.c" />
+    <ClCompile Include="wiiuse\guitar_hero_3.c" />
+    <ClCompile Include="wiiuse\io.c" />
+    <ClCompile Include="wiiuse\ir.c" />
+    <ClCompile Include="wiiuse\motion_plus.c" />
+    <ClCompile Include="wiiuse\nunchuk.c" />
+    <ClCompile Include="wiiuse\os_nix.c" />
+    <ClCompile Include="wiiuse\os_win.c" />
+    <ClCompile Include="wiiuse\util.c" />
+    <ClCompile Include="wiiuse\wiiboard.c" />
+    <ClCompile Include="wiiuse\wiiuse.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

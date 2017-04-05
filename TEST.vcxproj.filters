@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\WiiUse">
+      <UniqueIdentifier>{b71efdbf-ac55-4563-9e99-316e7d143d78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WiiUse">
+      <UniqueIdentifier>{ff554282-052f-4e14-a0c8-88743098c4a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wiiuse\classic.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\definitions.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\definitions_os.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\dynamics.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\events.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\guitar_hero_3.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\io.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\ir.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\motion_plus.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\nunchuk.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\os.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\wiiboard.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\wiiuse.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\wiiuse_internal.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="wiiuse\wiiuse_msvcstdint.h">
+      <Filter>Header Files\WiiUse</Filter>
+    </ClInclude>
+    <ClInclude Include="Mine\Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mine\OculusData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mine\OGLGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mine\OGLui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mine\WiiModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mine\glut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mine\glh_glut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wiiuse\classic.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="wiiuse\dynamics.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="wiiuse\events.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="wiiuse\guitar_hero_3.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="wiiuse\io.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="wiiuse\ir.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="wiiuse\motion_plus.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="wiiuse\nunchuk.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="wiiuse\os_nix.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="wiiuse\os_win.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="wiiuse\util.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="wiiuse\wiiboard.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="wiiuse\wiiuse.c">
+      <Filter>Source Files\WiiUse</Filter>
+    </ClCompile>
+    <ClCompile Include="Mine\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mine\OculusData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mine\OGLGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mine\OGLui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mine\WiiModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mine\glutfonts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OculusSDK\LibOVR\Src\OVR_CAPIShim.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
